@@ -19,3 +19,13 @@ void Bison::Eat_Grass()
 	weight += 10;
 }
 
+int Bison::Get_Weight()
+{
+	return weight;
+}
+
+int Bison::Get_Life()
+{
+	return Life;
+}
+

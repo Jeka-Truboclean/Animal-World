@@ -1,4 +1,5 @@
 #include <iostream>
+#include <stdlib.h>
 #include "Africa.h"
 #include "Animal_World.h"
 #include "Carnivore.h"
@@ -29,42 +30,61 @@ int main()
 	if (ch1 == 1 and ch2 == 1 and ch3 == 1)
 	{
 		ptr = new Africa();
-		ptr->Set(new Wildebeest(210, 1), new Wolf(210));
+		ptr->Set(new Wildebeest(110, 1), new Wolf(210));
 	}
 	else if (ch1 == 1 and ch2 == 1 and ch3 == 2)
 	{
 		ptr = new Africa();
-		ptr->Set(new Wildebeest(210, 1), new Lion(240));
+		ptr->Set(new Wildebeest(110, 1), new Lion(240));
 	}
 	else if (ch1 == 1 and ch2 == 2 and ch3 == 1)
 	{
 		ptr = new Africa();
-		ptr->Set(new Bison(260, 1), new Wolf(210));
+		ptr->Set(new Bison(120, 1), new Wolf(210));
 	}
 	else if (ch1 == 2 and ch2 == 1 and ch3 == 1)
 	{
 		ptr = new North_America();
-		ptr->Set(new Wildebeest(210, 1), new Wolf(210));
+		ptr->Set(new Wildebeest(110, 1), new Wolf(210));
 	}
 	else if (ch1 == 2 and ch2 == 1 and ch3 == 2)
 	{
 		ptr = new North_America();
-		ptr->Set(new Wildebeest(210, 1), new Lion(240));
+		ptr->Set(new Wildebeest(110, 1), new Lion(240));
 	}
 	else if (ch1 == 2 and ch2 == 2 and ch3 == 1)
 	{
 		ptr = new North_America();
-		ptr->Set(new Bison(260, 1), new Wolf(210));
+		ptr->Set(new Bison(120, 1), new Wolf(210));
 	}
 	else if (ch1 == 2 and ch2 == 2 and ch3 == 2)
 	{
 		ptr = new North_America();
-		ptr->Set(new Bison(260, 1), new Lion(240));
+		ptr->Set(new Bison(120, 1), new Lion(240));
 	}
 	else
 	{
 		cout << "ERROR" << endl;
 	}
+
+	short ch_fin;
+
+	do
+	{
+		system("cls");
+		ch_fin = 0;
+		cout << "\tChoose action\n1 - Feed herbivore\n2 - Feed carnivore\n>";
+		cin >> ch_fin;
+
+		switch (ch_fin)
+		{
+		case 1:
+
+		case 2:
+
+		}
+
+	} while (ch_fin == 0);
 
 	return 0;
 }

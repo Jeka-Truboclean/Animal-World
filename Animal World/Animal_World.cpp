@@ -11,11 +11,11 @@
 #include <iostream>
 using namespace std;
 
-void Animal_World::Meals_Herbibores()
+void Animal_World::Meals_Herbibores(Herbivore* herbivore)
 {
-	
+	herbivore->Eat_Grass();
 }
-void Animal_World::Nutririon_Carnivores()
+void Animal_World::Nutririon_Carnivores(Carnivore* carnivore, Herbivore* herbivore)
 {
-
+	carnivore->Eat(herbivore);
 }

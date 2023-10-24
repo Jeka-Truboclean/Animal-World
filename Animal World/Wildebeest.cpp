@@ -19,3 +19,13 @@ void Wildebeest::Set(int weight, bool life)
 	this->Life = life;
 }
 
+int Wildebeest::Get_Weight()
+{
+	return weight;
+}
+
+int Wildebeest::Get_Life()
+{
+	return Life;
+}
+

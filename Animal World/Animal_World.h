@@ -13,7 +13,7 @@
 class Animal_World 
 {
 public:
-	void Meals_Herbibores();
-	void Nutririon_Carnivores();
+	void Meals_Herbibores(Herbivore* herbivore);
+	void Nutririon_Carnivores(Carnivore* carnivore, Herbivore* herbivore);
 };
 

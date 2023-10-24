@@ -9,7 +9,7 @@ Wolf::Wolf(double power)
 
 void Wolf::Eat(Herbivore* herbivore)
 {
-	if (power > )
+	if (power > herbivore->Get_Weight()) // прописать геттер
 	{
 		power += 10;
 	}
